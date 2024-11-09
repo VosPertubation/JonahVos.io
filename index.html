@@ -3,69 +3,86 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Jonah's Website</title>
+  <title>Jonah Vos' Website</title>
   <style>
+    /* Main body styling */
     body {
       display: flex;
       justify-content: center;
       align-items: center;
-      height: 100vh;
+      min-height: 100vh;
       margin: 0;
       font-family: Arial, sans-serif;
-      background-color: #f0f0f0;
-    }
-    .container {
-      text-align: center;
-      max-width: 600px;
-      padding: 20px;
-      background-color: #ffffff;
-      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-      border-radius: 8px;
-    }
-    h1 {
-      font-size: 2em;
-      margin-bottom: 0.5em;
-    }
-    p {
-      font-size: 1.1em;
+      background-color: #e0e7ff; /* Light blue-gray background */
       color: #333;
     }
-    h2, h3 {
-      margin-top: 1.5em;
-      font-size: 1.5em;
-      color: #444;
+    
+    /* Central container with background and padding */
+    .container {
+      width: 80%;
+      max-width: 600px;
+      padding: 30px;
+      background-color: #ffffff; /* White background for the text box */
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      border-radius: 12px;
+      text-align: center;
     }
-    a {
+    
+    /* Name styling */
+    h1 {
+      font-size: 2.5em;
+      margin-bottom: 0.5em;
       color: #1a73e8;
+    }
+    
+    /* Links styling with background for hover effect */
+    .links {
+      display: flex;
+      flex-direction: column;
+      gap: 1em;
+      margin-top: 1.5em;
+      font-size: 1.2em;
+    }
+    .links a {
+      color: #444;
       text-decoration: none;
       font-weight: bold;
+      padding: 0.5em;
+      border-radius: 4px;
+      transition: background-color 0.3s, color 0.3s;
+      background-color: #f5f5f5; /* Light gray background for links */
     }
-    a:hover {
-      text-decoration: underline;
+    .links a:hover {
+      background-color: #1a73e8;
+      color: #ffffff;
+    }
+    
+    /* Intro text styling */
+    .intro-text {
+      margin-top: 2em;
+      font-size: 1.1em;
+      line-height: 1.6;
+      color: #555;
     }
   </style>
 </head>
 <body>
 
   <div class="container">
-    <h1>Hi, my name is Jonah and this is my website</h1>
-    <p>Welcome to my personal site! Here, you’ll find information about me and the projects I’m working on. I’m passionate about coding, data analysis, and building applications that solve real-world problems.</p>
+    <!-- Name Section -->
+    <h1>Jonah Vos</h1>
 
-    <!-- Projects Section -->
-    <h2>Projects</h2>
-    <p><a href="Optimizing automated stock trading.pdf" target="_blank">Open PDF</a></p>
-  </div>
-    <!-- Additional projects can be added here -->
-    <!-- Example:
-    <h3>Another Project Title</h3>
-    <p><a href="link_to_project.pdf" target="_blank">Project Link</a></p>
-    -->
+    <!-- Navigation Links Section -->
+    <div class="links">
+      <a href="projects.html" target="_blank">Projects</a>
+      <a href="investor.html" target="_blank">Sustainable Investor Report</a>
+      <a href="https://www.linkedin.com/in/jonah-vos2004/" target="_blank">LinkedIn</a>
+    </div>
 
-    <!-- Sustainable Investor Report Section -->
-    <h2>The Sustainable Investor Report</h2>
-    <p>This report provides insights and analysis on sustainable investment strategies, helping investors make environmentally and socially responsible choices.</p>
-    <p><a href="investor.html" target="_blank">Read the Report</a></p>
-
+    <!-- Introduction Section -->
+    <div class="intro-text">
+      <p>Hello! I'm Jonah Vos, a penultimate Astrophysics MPhys Student at Durham University. My main passion lies in applying computational methods to large datasets, particularly Financial data.</p>
+    </div>
   </div>
 
 </body>

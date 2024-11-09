@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jonah Vos' Projects</title>
+  <style>
+    /* Main body styling */
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #f0f4f8; /* Light background for contrast */
+      color: #333;
+    }
+    
+    /* Main container for the projects page */
+    .projects-container {
+      width: 90%;
+      max-width: 1000px;
+      padding: 20px;
+    }
+    
+    /* Header styling */
+    h1 {
+      text-align: center;
+      font-size: 2.5em;
+      color: #1a73e8;
+      margin-bottom: 1em;
+    }
+    
+    /* Grid layout for project cards */
+    .projects-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 20px;
+    }
+    
+    /* Individual project card styling */
+    .project-card {
+      background-color: #ffffff;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+    .project-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+    }
+    
+    /* Project title */
+    .project-title {
+      font-size: 1.5em;
+      color: #333;
+      margin-bottom: 0.3em;
+    }
+    
+    /* Project description */
+    .project-description {
+      font-size: 1em;
+      font-style: italic;
+      color: #555;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="projects-container">
+    <!-- Page Title -->
+    <h1>Projects</h1>
+
+    <!-- Projects Grid -->
+    <div class="projects-grid">
+
+      <!-- Project Card Example -->
+      <div class="project-card">
+        <p><a href="Optimizing automated stock trading.pdf" target="_blank">Optimizing automated stock trading</a></p>
+        <h2 class="project-title">Project Title 1</h2>
+        <p class="project-description">An experiment on automated stock trading to optimize investment returns using machine learning models and real-time data analysis.</p>
+      </div>
+
+      <!-- Additional project cards can be added here -->
+      <!--
+      <div class="project-card">
+        <h2 class="project-title">Project Title</h2>
+        <p class="project-description">Short description of the experiment or project in italics.</p>
+      </div>
+      -->
+
+    </div>
+  </div>
+
+</body>
+</html>
