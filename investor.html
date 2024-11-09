@@ -5,53 +5,37 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>The Sustainable Investor Report</title>
   <style>
-    /* General page styles */
+    /* General page styling */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    
     body {
       display: flex;
       justify-content: center;
       align-items: center;
-      height: 100vh;
-      margin: 0;
+      min-height: 100vh;
       font-family: Arial, sans-serif;
-      background-color: #e8f5e9;
+      background-color: #e8f5e9; /* Light green background */
       color: #2e7d32;
     }
 
-    /* Container styling */
+    /* Main container styling */
     .container {
-      text-align: center;
-      max-width: 700px;
-      padding: 20px;
+      width: 90%;
+      max-width: 800px;
       background-color: #ffffff;
-      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
-      border-radius: 8px;
+      border-radius: 12px;
+      padding: 30px;
+      text-align: center;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+      border: 1px solid rgba(255, 255, 255, 0.6);
+      position: relative;
     }
 
-    /* Main heading */
-    h1 {
-      font-size: 2em;
-      color: #1b5e20;
-      margin-bottom: 1em;
-    }
-
-    /* Section heading */
-    h2 {
-      margin-top: 1.5em;
-      font-size: 1.5em;
-      color: #388e3c;
-    }
-
-    /* Link styles */
-    a {
-      color: #1e88e5;
-      text-decoration: none;
-      font-weight: bold;
-    }
-    a:hover {
-      text-decoration: underline;
-    }
-
-    /* Sustainable design background */
+    /* Background overlay */
     body::before {
       content: "";
       position: absolute;
@@ -62,32 +46,75 @@
       background-image: url('sustainable_finance_background.jpg'); /* Optional: replace with an appropriate image */
       background-size: cover;
       background-position: center;
-      opacity: 0.1; /* Light opacity to keep it subtle */
+      opacity: 0.1;
       z-index: -1;
     }
 
-    /* Content text styling */
-    p {
-      font-size: 1.1em;
+    /* Title styling */
+    h1 {
+      font-size: 2.5rem;
+      font-weight: bold;
+      color: #1b5e20;
+      margin-bottom: 0.5em;
+      text-transform: uppercase;
+    }
+
+    /* Subtitle and report description */
+    .report-description {
+      font-size: 1.1rem;
+      color: #388e3c;
+      margin-bottom: 2em;
       line-height: 1.6;
+    }
+
+    /* Section headings */
+    h2 {
+      font-size: 1.5rem;
       color: #2e7d32;
+      margin-top: 2em;
+      margin-bottom: 1em;
+      text-transform: uppercase;
+      border-bottom: 2px solid #e0f2f1;
+      padding-bottom: 0.5em;
+    }
+
+    /* Issue information styling */
+    .issue-details {
+      font-size: 1.1rem;
+      color: #555;
+      margin-top: 1em;
+      font-weight: bold;
+    }
+
+    /* Link styling */
+    a {
+      color: #1e88e5;
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 1.1rem;
+      transition: color 0.3s;
+    }
+    a:hover {
+      color: #0d47a1;
+      text-decoration: underline;
     }
   </style>
 </head>
 <body>
 
   <div class="container">
+    <!-- Main Title and Introduction -->
     <h1>The Sustainable Investor Report</h1>
-    <p>Welcome to The Sustainable Investor Report: insights into sustainable finance and environmentally responsible investing.</p>
+    <p class="report-description">This biweekly report, led by Jonah Vos, provides insightful analysis across five critical sectors, focusing on environmental factors and sustainability trends that shape investment opportunities.</p>
 
-    <!-- Issue Links -->
-    <h2>Issues</h2>
+    <!-- Current Issue Section -->
+    <h2>Current Issue</h2>
     <p><a href="sustainable investor issue 1.pdf" target="_blank">Issue 1 - Sustainable Finance Trends</a></p>
-    
-    <!-- Add additional issues as needed -->
-    <!-- Example:
-    <p><a href="Issue_2_Sustainable_Investor_Report.pdf" target="_blank">Issue 2 - Green Bonds and Impact Investing</a></p>
-    -->
+    <p class="issue-details">Issued on: 06/11/2024</p>
+
+    <!-- Next Issue Information -->
+    <h2>Next Report</h2>
+    <p class="issue-details">Next report scheduled for release on: 20/11/2024</p>
   </div>
 
 </body>
